@@ -265,7 +265,7 @@
     width: 100%;
     height: auto;
     background-color: orange;
-    border-top:2px solid red;
+    border-top: 2px solid red;
 
 }
 
@@ -283,11 +283,20 @@
     gap: 1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+.broad_heading{
+    font-size: 2rem;
+    color:rgb(49, 5, 5);
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.broad_desc{
+    font-size: 1.5rem;
+    color:rgb(49, 5, 5);
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .img_container {
     display: flex;
     justify-content: center;
-    padding:1rem 0;
+    padding: 1rem 0;
 }
 
 .image_one {
@@ -302,19 +311,104 @@
     height: 100%;
     cursor: pointer;
 }
-.image_two{
+
+.image_two {
     display: flex;
     justify-content: center;
+    position: relative;
 }
+
 .mobile_image {
     width: 75%;
     height: 50%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    
+
     position: sticky;
-    top:100px;
+    top: 100px;
+}
+
+.mobile_image_two {
+    position: absolute;
+    border-radius: 4rem;
+    box-shadow: 5px 6px 5px rgb(248, 133, 2);
+    top: 60%;
+    border:1px solid orangered;
+    width: 8rem;
 }
 
 /* Broad section end here  */
+
+/* Love Container section  */
+.love_container {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, yellow, orange);
+    padding: 6rem 0;
+    border-top:2px solid rgb(255, 34, 0);
+}
+
+.love_content {
+    width: 70%;
+    margin: auto;
+    height: auto;
+}
+
+.love_content_heading {
+    font-size: 4rem;
+    color: rgb(103, 25, 25);
+    text-align: center;
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+.love_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+}
+
+.first_grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+     box-shadow: 5px 6px 5px rgb(248, 133, 2);
+    border-radius: 1rem; 
+    
+}
+
+.img_container {
+    padding: 1rem;
+    object-fit: cover;
+   
+}
+
+.cup_img {
+    border-radius: 6rem;
+    box-shadow: 5px 6px 5px rgb(244, 70, 7);
+     transition-duration: 1s;
+    transition-timing-function: linear;
+
+}
+.cup_img:hover{
+    transform: scale(0.9);
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.love_text {
+    text-align: center;
+    font-size: 1.5rem;
+    color: brown;
+    font-weight: bold;
+}
+/* .love_text span{
+    font-size: 3rem;
+} */
+.love_text2 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgb(96, 30, 30);
+}
